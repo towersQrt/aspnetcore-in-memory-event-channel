@@ -1,0 +1,23 @@
+root = true
+
+[*.cs]
+
+# Reglas de analizadores que se apagan a propósito.
+# Si una regla se vuelve útil más adelante, se cambia a warning.
+
+# Logs con LoggerMessage por rendimiento: demasiado trabajo para este proyecto de pruebas.
+dotnet_diagnostic.CA1848.severity = none
+dotnet_diagnostic.CA1873.severity = none
+
+# TResponse se usa como marca para que C# deduzca el tipo en ICommand/IQuery.
+dotnet_diagnostic.S2326.severity = none
+
+# Result<T>.Success y Failure son el diseño elegido.
+dotnet_diagnostic.CA1000.severity = none
+
+# Nombres elegidos: IEventHandler y CompanyCreated.Event.
+dotnet_diagnostic.CA1711.severity = none
+dotnet_diagnostic.CA1716.severity = none
+
+# Falso positivo: Scrutor encuentra los Validator por escaneo y EF Core llena el Id.
+dotnet_diagnostic.S1144.severity = none

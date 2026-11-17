@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Kendal.Web/Kendal.Web.csproj" />
+  </Folder>
+</Solution>
