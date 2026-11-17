@@ -1,0 +1,1 @@
+# aspnetcore-in-memory-event-channel
